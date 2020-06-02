@@ -62,7 +62,7 @@ class Welcome extends CI_Controller {
 		{
 			if ($this->uri->segment(3) == "auth")
 			{				
-				echo $this->input->get("id",TRUE);
+				echo 'id : '.$this->input->get("id",TRUE);
 			}
 		}
 	}
@@ -72,8 +72,8 @@ class Welcome extends CI_Controller {
 		{
 			if ($this->uri->segment(3) == "auth")
 			{				
-				echo $this->input->post("username",TRUE);
-				echo $this->input->post("password",TRUE);											
+				echo 'username : '.$this->input->post("username",TRUE).'</br>';
+				echo 'password : '.$this->input->post("password",TRUE);											
 			}
 		}
 	}
@@ -83,8 +83,8 @@ class Welcome extends CI_Controller {
 		{
 			if ($this->uri->segment(3) == "auth")
 			{				
-				echo $this->input->input_stream("username",TRUE);
-				echo $this->input->input_stream("password",TRUE);							
+				echo 'username : '.$this->input->input_stream("username",TRUE).'</br>';
+				echo 'password : '.$this->input->input_stream("password",TRUE);							
 			}
 		}
 	}
@@ -94,7 +94,7 @@ class Welcome extends CI_Controller {
 		{
 			if ($this->uri->segment(3) == "auth")
 			{				
-				echo $this->input->input_stream("id",TRUE);															
+				echo 'id : '.$this->input->input_stream("id",TRUE);															
 			}
 		}
 	}
