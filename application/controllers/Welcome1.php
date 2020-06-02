@@ -75,7 +75,7 @@ class Welcome extends CI_Controller {
 				$auth = json_decode($data);
 				if(($auth->auth_server == $this->key_auth)&&($auth->auth_client == sha1($this->key_client)))
 				{
-					echo 'username : '.$this->input->post("username",TRUE).'</br>';
+					echo 'username : '.$this->input->post("username",TRUE).',';
 					echo 'password : '.$this->input->post("password",TRUE);	
 				}							
 			}
@@ -91,7 +91,7 @@ class Welcome extends CI_Controller {
 				$auth = json_decode($data);
 				if(($auth->auth_server == $this->key_auth)&&($auth->auth_client == sha1($this->key_client)))
 				{
-					echo 'username : '.$this->input->input_stream("username",TRUE).'</br>';
+					echo 'username : '.$this->input->input_stream("username",TRUE).',';
 					echo 'password : '.$this->input->input_stream("password",TRUE);
 				}				
 			}
