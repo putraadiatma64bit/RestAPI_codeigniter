@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
 
-	private $url_auth = "http://localhost/api/admin/auth/index";
+	private $url_auth = "http://www.inspibook.com/wam/admin/auth/index";
 	private $key_auth = "3a226cb481d3d46905c35920813b4fca"; 
 
 	private $username = "asdi";
