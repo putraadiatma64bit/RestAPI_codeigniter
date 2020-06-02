@@ -72,7 +72,7 @@ class Welcome extends CI_Controller {
 		{
 			if ($this->uri->segment(3) == "auth")
 			{				
-				echo 'username : '.$this->input->post("username",TRUE).'</br>';
+				echo 'username : '.$this->input->post("username",TRUE).',';
 				echo 'password : '.$this->input->post("password",TRUE);											
 			}
 		}
@@ -83,7 +83,7 @@ class Welcome extends CI_Controller {
 		{
 			if ($this->uri->segment(3) == "auth")
 			{				
-				echo 'username : '.$this->input->input_stream("username",TRUE).'</br>';
+				echo 'username : '.$this->input->input_stream("username",TRUE).',';
 				echo 'password : '.$this->input->input_stream("password",TRUE);							
 			}
 		}
